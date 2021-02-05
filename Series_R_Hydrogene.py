@@ -6,33 +6,40 @@ Created on Mon Dec  7 15:52:33 2020
 """
 
 """ Ce programme identifie et affiche 
-les différentes serie de transition energetique de l'electron 
-dans l'atome d'Hydrogene en fonction du niveau final n2  """
+les différentes series de transition energetique de l'electron 
+dans l'atome d'Hydrogene en fonction du niveau quantique final n2  """
 
 # data
 evJ=1.6076634e-19 # Joules -> 1 electronvolt vaut 1,6076634.10e-19 Joules
 RH=1.10e7 # RH = 1.10e7 m-1
 h=6.63e-34 # h = 6.63e-34 m2.kg.s-1
 c=3.00e8 # c=3.00e08 m.s-1  
+
+# Initialisations
 lambdas=[]
 Energies=[]
 
 
 def convert_m_nm (l):
+	""" Convertit une grandeur metre en nanometre  """
     l=l/(10e-9)
     return l
 
 def convert_nm_m(l):
+	""" Convertit une grandeur nanometre en metre  """
     L=l/(10e-9)
     return L
 #
 def convert_Jev (EJ):
+	""" Convertit une grandeur Joule en electronVolt  """
     return EJ/evJ 
 
 # liste de nombre quantique du 1er niveau au niveau 7
 n=list(range(1,8))  
 
 def Raie_Hydrogen(n):
+	""" Retourne le nom des Series de transition de l'Hydrogene 
+	ainsi que la valeur de la longueur d'onde et de l'Energie """
     
     for i in range(len(n)):
         
@@ -66,7 +73,8 @@ def Raie_Hydrogen(n):
             print("et l'énergie de transition correspondante est E(",n2,")=",E,"ev")
             lambdas.append(lambd)
             Energies.append(E)
-#
+
+# Call de la fonction Raie_Hydrogen 
 print(Raie_Hydrogen(n))
 
 
