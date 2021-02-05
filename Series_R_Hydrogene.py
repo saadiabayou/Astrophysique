@@ -21,26 +21,26 @@ Energies=[]
 
 
 def convert_m_nm (l):
-	""" Convertit une grandeur metre en nanometre  """
+    """ Convertit une grandeur metre en nanometre """
     l=l/(10e-9)
     return l
 
 def convert_nm_m(l):
-	""" Convertit une grandeur nanometre en metre  """
+    """ Convertit une grandeur nanometre en metre  """
     L=l/(10e-9)
     return L
-#
+
 def convert_Jev (EJ):
-	""" Convertit une grandeur Joule en electronVolt  """
+    """ Convertit une grandeur Joule en electronVolt  """
     return EJ/evJ 
 
 # liste de nombre quantique du 1er niveau au niveau 7
 n=list(range(1,8))  
 
 def Raie_Hydrogen(n):
-	""" Retourne le nom des Series de transition de l'Hydrogene 
-	ainsi que la valeur de la longueur d'onde et de l'Energie """
-    
+    """ Retourne le nom des Series de transition de l'Hydrogene 
+    ainsi que la valeur de la longueur d'onde et de l'Energie """
+
     for i in range(len(n)):
         
         n1=n[i]
@@ -69,8 +69,8 @@ def Raie_Hydrogen(n):
             E=round(E,2)
             lambd=convert_m_nm (lambd)
             lambd=round(lambd,2)  
-            print("\nAu niveau d'énergie n2 =",n2,", la longueur d'onde lambda(",n2,")=",lambd,"nm")
-            print("et l'énergie de transition correspondante est E(",n2,")=",E,"ev")
+            print("\nAu niveau d'energie n2 =",n2,", la longueur d'onde lambda(",n2,")=",lambd,"nm")
+            print("et l'energie de transition correspondante est E(",n2,")=",E,"ev")
             lambdas.append(lambd)
             Energies.append(E)
 
