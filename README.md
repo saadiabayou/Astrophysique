@@ -2,7 +2,13 @@
 
 
 
------      Projet R_Hydrogene    -----
+-----      Projet   R_Hydrogene    -----
+
+
+Sujet : RAIES de l'HYDROGENE 
+
+
+Objectifs: 
 
 
 Dans ce projet R_Hydrogene , on s'interesse aux calculs des transitions de l'electron dans l'atome d'Hydrogene
@@ -24,7 +30,6 @@ Series_R_Hydrogene.py
 
 
 
-
 Pour executer ses programmes en ligne de commande Linux :
 
 python3 Raies_Hydrogene.py
@@ -33,7 +38,10 @@ python3 Series_R_Hydrogene.py
 
 
 
-Ou RUN dans un editeur python ( Spider, Idle, Pycharm, Jupyter Notebook )
+Ou sur Windows :
+
+RUN dans un editeur Python ( Spider, IDLE, Pycharm, Jupyter Notebook )
+
 
 
 Saadia Bayou
