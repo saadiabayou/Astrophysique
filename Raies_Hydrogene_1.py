@@ -14,8 +14,8 @@ evJ=1.6076634e-19 # Joules -> 1 electronvolt vaut 1,6076634.10e-19 Joules
 RH=1.10e7 # RH = 1.10e7 m-1
 h=6.63e-34 # h = 6.63e-34 m2.kg.s-1
 c=3.00e8 # c=3.00e08 m.s-1  
-lambdas=[]
-Energies=[]
+lambdas=[] # Initalisation liste longueurs d'onde
+Energies=[] # Initialisation liste Energies
 
 
 def convert_m_nm (l):
