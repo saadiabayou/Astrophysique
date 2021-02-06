@@ -5,7 +5,7 @@
 -----      Projet   R_Hydrogene    -----
 
 
-Sujet : RAIES de l'HYDROGENE 
+Sujet : Raies d'émission et d'absorption de l'Hydrogène 
 
 
 Objectifs: 
