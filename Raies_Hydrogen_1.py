@@ -28,12 +28,12 @@ def convert_nm_m(l):
     L=l/(10e-9)
     return L
 #
-def convert_Jev (EJ):
+def convert_J_ev (EJ):
     """ Convertit une grandeur en  Joule en electronvolt """
     return EJ/evJ 
 
 
-def convert_evJ(Eev):
+def convert_ev_J(Eev):
     """ Convertit une grandeur en electronvolt en  Joule """
     
     print("\nLa grandeur en ev convertie en Joules vaut :\n ")
@@ -45,7 +45,7 @@ def Raie_H(n1,ln2):
     for n2 in ln2 :
         lambd=1/(RH*((1/(n1**2))-(1/(n2**2))))
         E=(h*c)/lambd
-        E=convert_Jev(E)
+        E=convert_J_ev(E)
         E=round(E,2)
         lambd=convert_m_nm (lambd)
         lambd=round(lambd,2)  
