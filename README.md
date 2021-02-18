@@ -36,7 +36,7 @@ python3 Series_R_Hydrogene.py
 
 Ou sur Windows :
 
-RUN dans un editeur Python ( Spider, IDLE, Pycharm, Jupyter Notebook )
+RUN dans un editeur Python ( Spyder, IDLE, Pycharm, Jupyter Notebook )
 
 
 
