@@ -12,21 +12,25 @@ c=3.00e8 # c=3.00e08 m.s-1
 lambdas=[]
 Energies=[]
 
-
+#metre -> nanometre
 def convert_m_nm (l):
-    l=l/(10e-9)
-    return l
-
-def convert_nm_m(l):
-    L=l/(10e-9)
+    """Convertit une grandeur en mètre en nanomètre"""
+    L=l*(1e+09)
     return L
-#
+# nanometre -> metre
+def convert_nm_m(l):
+    """ Convertit une grandeur en nanomètre en mètre """
+    L=l/(1e+09)
+    return L
+
 def convert_Jev (EJ):
     """ This function change a Joule value to an electronvolt value """
     return EJ/evJ 
 
+
+
 n1=int(input("Entrer la valeur du niveau d'énergie initial : \nn1= "))
-n2=int(input("Entrer la valeur du niveau d'énergie final:\n2= "))
+n2=int(input("Entrer la valeur du niveau d'énergie final:\nn2= "))
 
 def Raie_H(n1,n2):
     lambd=1/(RH*((1/(n1**2))-(1/(n2**2))))
@@ -37,7 +41,7 @@ def Raie_H(n1,n2):
     lambd=convert_m_nm (lambd)
     lambd=round(lambd,2)  
     
-    return "lambda = " + str(lambd) + " Energie = "+ str(E)
+    return "lambda = " + str(lambd) +" nm"+ " Energie = "+ str(E)+ " ev"
 
 #Appel fonction  
     

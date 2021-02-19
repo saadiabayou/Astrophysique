@@ -12,17 +12,19 @@ c=3.00e8 # c=3.00e08 m.s-1
 lambdas=[]
 Energies=[]
 
-
+#metre -> nanometre
 def convert_m_nm (l):
-    l=l/(10e-9)
-    return l
-
-def convert_nm_m(l):
-    L=l/(10e-9)
+    """Convertit une grandeur en mètre en nanomètre"""
+    L=l*(1e+09)
     return L
-#
+# nanometre -> metre
+def convert_nm_m(l):
+    """ Convertit une grandeur en nanomètre en mètre """
+    L=l/(1e+09)
+    return L
+
 def convert_Jev (EJ):
-    """ This function change a Joule value to an electronvolt value """
+    """ Cette fonction convertit une grandeur de Joule à electronVolt"""
     return EJ/evJ 
 
 n=list(range(1,8)) # liste de nombre quantique du 1er niveau au niveau 7 
