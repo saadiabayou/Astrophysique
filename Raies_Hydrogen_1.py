@@ -41,10 +41,10 @@ def Raie_H(n1,n2):
     lambd=convert_m_nm (lambd)
     lambd=round(lambd,2)  
     
-    return "lambda = " + str(lambd) +" nm"+ " Energie = "+ str(E)+ " ev"
+    return "lambda = " + str(lambd) +" nm"+ " , Energie = "+ str(E)+ " ev"
 
 #Appel fonction  
-    
 print(Raie_H(n1,n2))
+
     
 
